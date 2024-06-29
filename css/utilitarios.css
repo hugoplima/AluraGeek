@@ -1,0 +1,49 @@
+:root {
+  --c1: #03318c;
+  --c2: #5d04d9;
+  --c3: #5300c8;
+  --c4: #9303a6;
+  --c5: #c004d9;
+  --c6: #8c0375;
+  --w: #fff;
+  --b: #000;
+  --g1: #d6d6d6;
+  --g2: #e5e5e5;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@keyframes show-left {
+  from {
+    opacity: 0;
+    transform: translate3d(100px, 0, 0);
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+  } to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

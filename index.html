@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AluraGeek</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="shortcut icon" href="/assets/logo.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <img src="./assets/logo.svg" alt="Logo AluraGeek">
+    <span>AluraGeek</span>
+  </header>
+
+  <main class="container">
+    <section class="produtos-catalogo">
+      <h2>Meus Produtos:</h2>
+      <ul class="produtos-lista" data-lista>
+        <h3 class="lista-vazia-msg" data-mensagem="lista-vazia">Lista de produtos vazia.</h3>
+      </ul>
+    </section>
+
+    <section class="adicionar-produtos">
+      <h2>Adicionar<br>Produto:</h2>
+      <form action="" class="form-produtos" data-formulario>
+        <div class="form-campo">
+          <label for="nome"></label>
+          <input type="text" name="nome" id="nome" data-nome placeholder="nome...">
+        </div>
+        <div class="form-campo">
+          <label for="preco"></label>
+          <input type="text" name="preco" id="preco" data-preco placeholder="valor...">
+        </div>
+        <div class="form-campo">
+          <label for="imagem"></label>
+          <input type="text" name="imagem" id="imagem" data-imagem placeholder="imagem...">
+        </div>
+        <div class="form-btn">
+          <input type="submit" name="enviar" id="enviar" value="Enviar">
+          <input type="reset" name="limpar" id="limpar" value="Limpar">
+        </div>
+      </form>
+      <p class="falta-elementos-msg" data-mensagem="erro-form">Preencha todos os campos para adicionar um produto</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">
+      <img src="/assets/logo.svg" alt="Logo AluraGeek">
+      <span>AluraGeek</span>
+    </div>
+    <p>Desenvolvido por Hugo Lima</p>
+  </footer>
+
+  <script src="/js/conexao.js" type="module"></script>
+  <script src="/js/construirProduto.js" type="module"></script>
+  <script src="/js/mostrarProduto.js" type="module"></script>
+  <script src="/js/excluirProduto.js" type="module"></script>
+</body>
+</html>
